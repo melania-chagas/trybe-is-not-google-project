@@ -30,9 +30,11 @@ def remove(instance):
 
 
 def file_metadata(instance, position):
-    """Aqui irá sua implementação"""
+    if position > instance. __len__():
+        return sys.stderr.write('Posição inválida')
+    return sys.stdout.write(str(instance.search(position)))
 
 
 # queue = Queue()
 # process('statics/arquivo_teste.txt', queue)
-# print(remove(queue))
+# print(file_metadata(queue, 0))
